@@ -14,5 +14,19 @@ module Fstimeline
 
     end
 
+    class Entry
+      def initialize(object, stat)
+        @object = object
+        @stat = stat
+      end
+
+      def object
+        @object
+      end
+
+      def stat
+        @stat
+      end
+    end
   end
 end
