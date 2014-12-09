@@ -8,7 +8,7 @@ module Fstimeline
         @nodes = nodes
       end
 
-      def hash
+      def checksum
         hashes = nodes.map {|n| n.hash }
         Digest::SHA1.hexdigest('TREE:' + hashes.sort.join("\n"))
       end

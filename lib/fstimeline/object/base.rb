@@ -1,7 +1,7 @@
 module Fstimeline
   module Object
     class Base
-      def hash
+      def checksum
         raise NotImplementedError
       end
     end

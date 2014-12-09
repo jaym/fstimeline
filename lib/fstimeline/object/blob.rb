@@ -8,7 +8,7 @@ module Fstimeline
         @blob = blob
       end
 
-      def hash
+      def checksum
         Digest::SHA1.hexdigest('BLOB:' + blob)
       end
     end
