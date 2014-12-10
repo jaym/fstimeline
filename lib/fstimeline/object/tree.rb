@@ -3,7 +3,7 @@ require 'digest/sha1'
 
 module Fstimeline
   module Object
-    class Tree < FsTimeline::Object::Base
+    class Tree < Base
       def initialize(nodes)
         @nodes = nodes
       end

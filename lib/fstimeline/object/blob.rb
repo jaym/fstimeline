@@ -3,7 +3,7 @@ require 'digest/sha1'
 
 module Fstimeline
   module Object
-    class Blob < FsTimeline::Object::Base
+    class Blob < Base
       def initialize(blob)
         @blob = blob
       end
